@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="land.map.feature.presentation.ui.fragmentes.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_listCarFragment"
+            app:destination="@id/listCarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_showAllCarOnMapFragment"
+            app:destination="@id/showAllCarOnMapFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listCarFragment"
+        android:name="land.map.feature.presentation.ui.fragmentes.ListCarFragment"
+        android:label="ListCarFragment" >
+        <action
+            android:id="@+id/action_listCarFragment_to_showSingleCarOnMapFragment"
+            app:destination="@id/showSingleCarOnMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showAllCarOnMapFragment"
+        android:name="land.map.feature.presentation.ui.fragmentes.ShowAllCarOnMapFragment"
+        android:label="fragment_show_all_car_on_map"
+        tools:layout="@layout/fragment_show_all_car_on_map" />
+    <fragment
+        android:id="@+id/showSingleCarOnMapFragment"
+        android:name="land.map.feature.presentation.ui.fragmentes.ShowSingleCarOnMapFragment"
+        android:label="fragment_show_single_car_on_map"
+        tools:layout="@layout/fragment_show_single_car_on_map" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="land.map.feature.presentation.ui.fragmentes.CameraFragment"
+        android:label="CameraFragment" />
+</navigation>

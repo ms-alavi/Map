@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Map</string>
+    <string name="request">Request Car</string>
+    <string name="map_activity_name">Google Maps</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="car">Car Type</string>
+    <string name="car_requested">Car requested</string>
+    <string name="show_all_car_on_map">Show all car on map</string>
+    <string name="show_all_car_on_list">Show all car on list</string>
+    <string name="get_capture">Get capture</string>
+</resources>
